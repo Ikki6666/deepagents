@@ -3,6 +3,9 @@
   "python.analysis.include": [
     "libs/**"
   ],
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/libs/deepagents"
+  ],
   "python.analysis.exclude": [
     "**/node_modules",
     "**/__pycache__",
@@ -66,11 +69,13 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-  "python.terminal.activateEnvironment": false,
-  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.defaultInterpreterPath": "./libs/deepagents/.venv/bin/python",
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
       "file": ".github/workflows/pr_lint.yml"
     }
-  ]
+  ],
+  "python-envs.defaultEnvManager": "ms-python.python:pyenv",
+  "python.languageServer": "None"
 }
