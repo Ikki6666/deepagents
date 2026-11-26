@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/langchain-ai/deepagents/compare/deepagents-talon==0.1.2...deepagents-talon==0.1.3) (2026-11-26)
+
+
+### Bug Fixes
+
+* **talon:** swap retiring Baseten DeepSeek models for V4.1 Flash 1017 in `/effort` ([#8010](https://github.com/langchain-ai/deepagents/issues/8010)) ([42caf16](https://github.com/langchain-ai/deepagents/commit/42caf164f805e2aea5264987f62fffd7f11738ba))
+
 ## [0.1.2](https://github.com/langchain-ai/deepagents/compare/deepagents-talon==0.1.1...deepagents-talon==0.1.2) (2026-11-24)
 
 ### Features
