@@ -17,25 +17,6 @@ from urllib.parse import urlparse
 from deepagents_talon.interfaces import ChannelMedia
 
 MAX_INBOUND_IMAGE_BYTES = 5 * 1024 * 1024
-MAX_TEXT_DOCUMENT_BYTES = 100 * 1024
-
-READABLE_DOCUMENT_EXTENSIONS = frozenset(
-    {
-        ".txt",
-        ".md",
-        ".csv",
-        ".json",
-        ".xml",
-        ".yaml",
-        ".yml",
-        ".log",
-        ".py",
-        ".js",
-        ".ts",
-        ".html",
-        ".css",
-    },
-)
 VIDEO_EXTENSIONS = frozenset({".mp4", ".mov", ".webm", ".3gp", ".m4v"})
 
 ContentBlock = dict[str, object]

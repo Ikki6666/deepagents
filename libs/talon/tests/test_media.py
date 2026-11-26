@@ -10,7 +10,6 @@ import pytest
 
 from deepagents_talon.interfaces import ChannelMedia
 from deepagents_talon.media import (
-    MAX_TEXT_DOCUMENT_BYTES,
     MarkdownMediaRef,
     build_inbound_text,
     build_model_content,
@@ -48,7 +47,7 @@ def test_build_inbound_text_references_large_and_binary_documents(
     tmp_path: Path, filename: str
 ) -> None:
     document = tmp_path / filename
-    document.write_bytes(b"x" * (MAX_TEXT_DOCUMENT_BYTES + 1))
+    document.write_bytes(b"x" * (100 * 1024 + 1))  # Larger than any inline-text budget.
 
     text = build_inbound_text("", {"media_type": "document", "media_paths": [str(document)]})
 
