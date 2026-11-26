@@ -1,4 +1,8 @@
 {
+  "workbench.editorAssociations": {
+    "*.md": "default",
+    "*.markdown": "default"
+  },
   "prettier.enable": false,
   "python.analysis.include": [
     "libs/**"
@@ -72,5 +76,7 @@
     {
       "file": ".github/workflows/pr_lint.yml"
     }
-  ]
+  ],
+  "python.languageServer": "Pylance",
+  "basedpyright.languageServer.enable": false
 }
